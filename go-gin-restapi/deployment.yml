@@ -18,7 +18,7 @@ spec:
           name: go-gin-restapi
           ports:
             - containerPort: 3000
-        - image: isshi/python-streamlit-example:8426f4af7874c49d9405e2b59049a6cc2b38ffe2
+        - image: isshi/python-streamlit-example:fbea625e981aa39deffd0558c42c5641e235ca5f
           name: python-streamlit
           ports:
             - containerPort: 4000
