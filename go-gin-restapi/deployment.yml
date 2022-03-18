@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: streamlit-gin-example
+  name: go-gin-restapi
 spec:
   replicas: 2
   revisionHistoryLimit: 3
