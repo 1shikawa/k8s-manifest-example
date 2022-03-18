@@ -7,18 +7,18 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: streamlit-gin-example
+      app: go-gin-restapi
   template:
     metadata:
       labels:
-        app: streamlit-gin-example
+        app: go-gin-restapi
     spec:
       containers:
         - image: isshi/go-gin-restapi-example:db893a71eb1e8e71bb13702024467eac9f60ab8c
           name: go-gin-restapi
           ports:
             - containerPort: 3000
-        - image: isshi/python-streamlit-example:db6d19a302042befd90e749d21dfc79f85b7125f
-          name: python-streamlit
-          ports:
-            - containerPort: 4000
+        # - image: isshi/python-streamlit-example:db6d19a302042befd90e749d21dfc79f85b7125f
+        #   name: python-streamlit
+        #   ports:
+        #     - containerPort: 4000
