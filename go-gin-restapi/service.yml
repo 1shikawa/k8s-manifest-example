@@ -5,6 +5,6 @@ metadata:
 spec:
   ports:
   - port: 3000
-    targetPort: 3000
+    targetPort: 4000
   selector:
     app: streamlit-gin-example
