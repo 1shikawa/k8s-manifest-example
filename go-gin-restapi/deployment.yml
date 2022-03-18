@@ -14,7 +14,7 @@ spec:
         app: go-gin-restapi
     spec:
       containers:
-        - image: isshi/go-gin-restapi-example:db893a71eb1e8e71bb13702024467eac9f60ab8c
+        - image: isshi/go-gin-restapi-example:5c785865207eb0b27258834ce045a3c16fedf493
           name: go-gin-restapi
           ports:
             - containerPort: 3000
