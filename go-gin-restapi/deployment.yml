@@ -1,20 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: go-gin-restapi
+  name: streamlit-gin-example
 spec:
   replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: go-gin-restapi
+      app: streamlit-gin-example
   template:
     metadata:
       labels:
-        app: go-gin-restapi
+        app: streamlit-gin-example
     spec:
       containers:
         - image: isshi/go-gin-restapi-example:db893a71eb1e8e71bb13702024467eac9f60ab8c
           name: go-gin-restapi
           ports:
             - containerPort: 3000
+        - image: isshi/python-streamlit-example:8426f4af7874c49d9405e2b59049a6cc2b38ffe2
+          name: python-streamlit
+          ports:
+            - containerPort: 4000
